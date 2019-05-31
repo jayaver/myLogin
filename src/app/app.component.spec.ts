@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'mylogin'`, () => {
+  it(`should have as title 'AuthwithDb'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('mylogin');
+    expect(app.title).toEqual('AuthwithDb');
   });
 
   it('should render title in a h1 tag', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Welcome to mylogin!');
+    expect(compiled.querySelector('h1').textContent).toContain('Welcome to AuthwithDb!');
   });
 });

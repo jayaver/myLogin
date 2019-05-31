@@ -1,0 +1,93 @@
+<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+  <h5 class="my-0 mr-md-auto font-weight-normal navbar-brand">
+    LogIn
+  </h5>
+  <nav class="my-2 my-md-0 mr-md-3">
+    <a routerLink="/" class="p-2 text-dark">Home</a>
+    <small><span *ngIf="user | async">Welcome {{ (user | async)?.email }}</span></small>
+  </nav>
+  <div class="container-fluid bg-white">
+  <div class="form-group row" id="contactForm">
+    <label for="fname" class="col-sm-2 col-form-label">First name <font color="red">*</font></label>
+    <div class="col-sm-4">
+        <input class = "form-control" type="text" name="fname" id="fname" placeholder="First Name" required> 
+    </div> 
+  </div>
+<!---Last Name--->
+  <div class="form-group row" id="contactForm">
+    <label for="lname" class="col-sm-2 col-form-label">Last name <font color="red">*</font></label>
+    <div class="col-sm-4">
+      <input class="form-control" type="text" name="lname" id="lname" placeholder="Last Name" required> 
+    </div> 
+  </div>
+<!---Address--->
+<div class="form-group row">
+<label for="address" class="col-sm-2 col-form-label">Address<font color="red">*</font></label>
+<div class="col-sm-4">
+    <input class="form-control" type="text" name ="address" id="address" placeholder="Address" required> 
+</div>
+</div>
+
+<!---Address1--->
+<div class="form-group row">
+  <label for="address1" class="col-sm-2 col-form-label">Address 1</label>
+  <div class="col-sm-4">
+      <input class="form-control" type="text" name ="address1" id="address1" placeholder="Address 1"> 
+  </div>
+</div>
+
+<!---City--->
+<div class="form-group row">
+  <label for="city" class="col-sm-2 col-form-label">City<font color="red">*</font></label>
+<div class="col-sm-4">
+      <input class="form-control" type="text" name ="city" id="city" placeholder="City" required> 
+  </div>
+</div>
+
+
+<!---Region/State--->
+<div class="form-group row">
+  <label for="region" class="col-sm-2 col-form-label">Region/ State<font color="red">*</font></label>
+<div class="col-sm-4">
+      <input class="form-control" type="text" name ="region" id="region" placeholder="Region/ State" required> 
+  </div>
+</div>
+
+<!---Country--->
+<div class="form-group row">
+  <label for="country" class="col-sm-2 col-form-label">Country<font color="red">*</font></label>
+<div class="col-sm-4">
+      <input class="form-control" type="text" name ="country" id="country" placeholder="Country" required> 
+  </div>
+</div>
+
+<!---Postal Code/ Zip Code--->
+<div class="form-group row">
+  <label for="postal" class="col-sm-2 col-form-label">Postal/ ZIP Code<font color="red">*</font></label>
+<div class="col-sm-4">
+      <input class="form-control" type="text" name ="postal" id="postal" placeholder="Postal/ ZIP Code" required> 
+  </div>
+</div>
+
+<!---E-mail--->
+<div class="form-group row">
+  <label for="emailId" class="col-sm-2 col-form-label">E-mail<font color="red">*</font></label>
+<div class="col-sm-4">
+      <input class="form-control" type="email" name ="emailId" id="emailId" placeholder="E-mail" required> 
+  </div>
+</div>
+
+<!---Phone Number--->
+<div class="form-group row">
+  <label for="phone" class="col-sm-2 col-form-label">Phone<font color="red">*</font></label>
+<div class="col-sm-4">
+      <input class="form-control" type="number" name ="phone" id="phone" placeholder="Phone" required> 
+  </div>
+</div>
+
+<!---Submit button--->
+<button onclick = "onSubmit()" class="btn btn-primary" id="submit">Submit</button>
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/6.1.0/firebase-app.js"></script>
+<script src="/src/assets/JSFile/todo.js"></script>
