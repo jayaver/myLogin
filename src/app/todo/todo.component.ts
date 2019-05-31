@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 declare const submitForm : any;
 declare const saveMessage : any;
 
@@ -10,9 +11,9 @@ declare const saveMessage : any;
 })
 export class TodoComponent implements OnInit {
 
-  submit () {
-    submitForm();
-    saveMessage();
+    onSubmit () {
+      submitForm();
+      saveMessage();
 
   }
 

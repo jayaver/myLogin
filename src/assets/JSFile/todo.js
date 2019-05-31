@@ -1,16 +1,23 @@
-<script src="https://www.gstatic.com/firebasejs/6.1.0/firebase-app.js"></script>
+//<script src="https://www.gstatic.com/firebasejs/6.1.0/firebase-app.js"></script>
+// var firebase = require(firebase);
+// const firebaseapp = 'firebase/app';
+// const storage = 'firebase/storage';
+// var secondary = firebase.initializeApp(secondaryAppConfig, "secondary");
 
 // Initialize Firebase (ADD YOUR OWN DATA)
 var config = {
-    apiKey: "AIzaSyARWdv7Za4xWJyTrTT2TNIhLMXa81hZvhI",
-    authDomain: "contactform-8c331.firebaseapp.com",
-    databaseURL: "https://contactform-8c331.firebaseio.com",
-    projectId: "contactform-8c331",
-    storageBucket: "",
-    messagingSenderId: "642794642094",
-    appId: "1:642794642094:web:f67eca92c4b87e18"
+    apiKey: "AIzaSyCBQOeETaQLGbhcsZZ1GkbP7OD23ZI8bnQ",
+    authDomain: "authwithdb-6a42a.firebaseapp.com",
+    databaseURL: "https://authwithdb-6a42a.firebaseio.com",
+    projectId: "authwithdb-6a42a",
+    storageBucket: "authwithdb-6a42a.appspot.com",
+    messagingSenderId: "706470838018"
   };
+
+    const firebase=require(firebase);
   firebase.initializeApp(config);
+
+  //var database = firebase.database();
   
   // Reference messages collection
   var messagesRef = firebase.database().ref('messages');

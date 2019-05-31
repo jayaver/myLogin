@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 
+declare const submitForm : any;
+declare const saveMessage : any;
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,4 +10,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'AuthwithDb';
+  onSubmit () {
+    submitForm();
+    saveMessage();
+
+}
 }
